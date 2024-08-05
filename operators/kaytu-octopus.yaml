@@ -31,4 +31,4 @@ spec:
   values:
     kaytu:
       domain:
-        main: app.kaytu.dev
+        main: test4.kaytu.dev
