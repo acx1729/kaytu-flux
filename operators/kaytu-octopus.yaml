@@ -23,13 +23,19 @@ spec:
         kind: HelmRepository
         name: kaytu-io
         namespace: flux-system
-      version: 0.0.95
+      version: 0.0.171
   install:
     createNamespace: true
     crds: Create
   upgrade:
     crds: CreateReplace
-  values:
-    kaytu:
-      domain:
-        main: app.kaytu.dev
+#  values:
+#    kaytu:
+#      dex:
+#        issuer: "https://demo.kaytu.io/dex"
+#        connectorsFromSecret: "dex-connectors-secret"
+#        enablePasswordDB: true
+#        staticPasswordsFromSecret: "dex-staticpass-secret"
+#        version-count: 0
+#      domain:
+#        main: demo.kaytu.io
